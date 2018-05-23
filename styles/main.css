@@ -1,0 +1,386 @@
+
+	/*----------------------------------------
+		HTML Tags
+	----------------------------------------*/
+
+html {
+	box-sizing: border-box;
+	min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Baloo', cursive;
+	font-size: 1em;
+	/*background-color: #338FCB;*/
+	background-color: #60E9FF;
+}
+
+input,
+select {
+	display: block;
+	border: 1px solid #000;
+	margin: 0.5rem 0 1rem 0;
+	-webkit-box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 3px; 
+}
+
+label {
+	font-size: 1.2rem;
+}
+
+
+label,
+li,
+#submit-btn {
+	color: #fff;
+	-webkit-text-stroke: 1.3px #000;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+	/*----------------------------------------
+		Class Tags
+	----------------------------------------*/
+
+.header,
+.copy {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.header {
+	margin-top: 2rem;
+	font-size: 1rem;
+}
+
+.copy {
+	font-size: 0.8rem;
+}
+
+.copy a,
+.copy a:visited {
+	color: #000;
+	transition: color 0.1s ease-out;
+}
+
+.copy a:hover {
+	color: #efefef;
+}
+
+.result {
+	display: flex;
+	font-size: 1.4rem;
+	margin: 1rem 0;
+}
+
+.result p {
+	padding: 0 1rem;
+	margin: 0;
+}
+
+.bullet {
+	flex: 0 auto;
+	color: #000;
+	margin: right;
+	width: 1rem;
+}
+
+.resultText {
+	flex: 1 auto;
+}
+
+.amount {
+	color: #2196F3;
+}
+
+/* Remove Default list bullets */
+.results-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ /* Container for inputs and labels */
+.input {
+	position: relative;
+	width: 80%;
+	margin: 1rem auto;
+}
+
+/* No results text*/
+.no-fish {
+	max-width: 90%;
+	margin: 1rem auto;
+}
+
+	/*----------------------------------------
+		Index Tags
+	----------------------------------------*/
+
+#bg-image {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+#budget,
+#budget-dollar-sign {
+	display: inline-block;
+}
+
+#budget {
+	margin: left;
+}
+
+#fish-pic {
+	display: block;
+	margin: 0 auto;
+	max-width: 130px;
+}
+
+#wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#container {
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+}
+
+/* The form itself */
+#query {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-bottom: 2rem;
+}
+
+#submit-btn {
+	position: relative;
+	padding: 0.3rem 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: #0FB000;
+	font-size: 1.5rem;
+	-webkit-box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.5);
+	-o-box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#submit-btn:focus {
+	outline: 0;
+}
+
+#submit-btn:active {
+	left: calc(50% + 1px);
+	top: 1px;
+	-webkit-box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.1);
+	-o-box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow:0px 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#submit-btn:hover {
+	background-color: #00A200;
+}
+
+#title {
+	-webkit-text-stroke: 0.5px #000;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	color: #fff;
+	margin: 1rem;
+	font-size: 2.5rem;
+	display: inline-block;
+}
+
+#goldie {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	max-width: 135px;
+}
+
+#fish-header,
+#fish-name {
+	-webkit-text-stroke: 0.8px #000;
+	color: #fff;
+	width: 90%;
+	margin: 1rem auto;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+#fish-header {
+	font-size: 1.7rem;
+}
+
+#fish-name {
+	font-size: 2rem;
+}
+
+#fish-stats{
+	display: none;
+	width: 90%;
+	max-width: 600px;
+	margin: 1rem auto;
+	background-color: #fff;
+	border-radius: 12px;
+	border: 3px solid #000;
+	-webkit-box-shadow:2px 3px 2px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:2px 3px 2px 2px rgba(0, 0, 0, 0.5);
+	-o-box-shadow:2px 3px 2px 2px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow:2px 3px 2px 2px rgba(0, 0, 0, 0.5);
+	box-shadow:2px 3px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#wait {
+	display: none;
+	text-align: center;
+}
+
+
+	/*----------------------------------------
+		Super-Gro custom checkbox
+	----------------------------------------*/
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #000;
+    -webkit-box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+	/*----------------------------------------
+		Media Queries
+	----------------------------------------*/
+
+
+/* Screens larger than 568px in width */
+@media only screen and (min-width: 568px) {
+
+	.results-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.result {
+		flex: 1 50%;
+		margin: 0.5rem 0;
+	}
+
+	.bullet {
+		margin: left;
+	}
+
+	#goldie {
+		right: 20%;
+	}
+
+	.header {
+		margin-top: 3rem;
+	}
+
+	#fish-header {
+		font-size: 1.6rem;
+	}
+}

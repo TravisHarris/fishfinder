@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fish Finder</title>
+		<link rel="shortcut icon" type="image/png" href="goldieSmall.jpg">
+		<meta name="description" content="An application to find the most profitable fish given a situation in Fish World by Big Viking Games">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+		<!-- <link rel="stylesheet" type="text/css" href="styles/main.css"> -->
+		<link rel="stylesheet" type="text/css" href="styles/main-min.css">
+	</head>
+	<body>
+		<img id="bg-image" src="bg.jpg" alt="background image">
+		<img id="goldie" src="goldie.png" alt="goldie">
+		<div id="wrapper">
+			<div id="container">
+				<h1 id="title">Fish Finder</h1>
+				<p class="header">Find The Most Profitable Fish For Any Situation In Fish World!</p>
+				<p class="copy">Not affiliated with Fish World or Big Viking Games, check out their official site at <a href="https://www.bigvikinggames.com/" target="_blank">bigvikinggames.com</a></p>
+				<form id="query">
+					<div class="input">
+						<label for="level">What Level Are You?</label>
+						<input id="level" type="text" name="level" placeholder=" Level">
+					</div>
+					<div class="input">
+						<label for="budget">How Much Do You Want To Spend?</label>
+						<div id="budget-wrapper">
+							<p id="budget-dollar-sign">$</p>
+							<input id="budget" type="text" name="budget" placeholder=" Budget">
+						</div>
+					</div>
+					<div class="input">
+						<label for="tanks">How Many Tanks Of Fish To Use?</label>
+						<input id="tanks" type="text" name="tanks" placeholder=" Tanks">
+					</div>
+					<div class="input">
+						<label class="checkbox-container" for="super-Gro">Are You Using Super-Gro?
+							<input id="super-Gro" type="checkbox" name="super-gro">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div id="timeframe-div" class="input">
+						<label for="timeframe">How Long Should The Fish Take To Grow?</label>
+						<select id="timeframe" name="timeframe">
+							<option value="5">5 Mins</option>
+							<option value="4">4 Hours</option>
+							<option value="8">8 Hours</option>
+							<option value="12">12 Hours</option>
+							<option value="24">1 Day</option>
+							<option value="36">1 Day 12 Hours</option>
+							<option value="48">2 Days</option>
+							<option value="72">3 Days</option>
+							<option value="96">4 Days</option>
+							<option value="120">5 Days</option>
+							<option value="128">5 Days 8 Hours</option>
+							<option value="168">7 Days</option>
+							<option value="240">10 Days</option>
+							<option value="336">14 Days</option>
+						</select>
+					</div>
+					<button id="submit-btn" class="scroll" type="submit">Find Fish</button>
+				</form>
+				<p id="wait">Please Wait...</p>
+				<div id="fish-stats"></div>
+			</div>
+		</div>
+		<script
+  			src="https://code.jquery.com/jquery-3.3.1.min.js"
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  			crossorigin="anonymous">
+  		</script>
+  		<!-- Testing -->
+		<!-- <script src="scripts/fishcalculator.js"></script> -->
+		<!-- <script type="text/javascript" src="scripts/working-calculator.js"></script> -->
+		<!-- <script type="text/javascript" src="scripts/working-calculator-min.js"></script> -->
+		<script type="text/javascript" src="scripts/main-babel.js"></script>
+	</body>
+</html>

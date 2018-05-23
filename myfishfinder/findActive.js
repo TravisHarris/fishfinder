@@ -6,12 +6,14 @@ fetch(url)
 		let results = ``;
 		for(let i = 0; i < data.fish.length; i++){
 			let fish = data.fish[i];
-			if(fish.ufb === "0"){
+			if(fish.ufb === "0" ||
+				fish.active !== "1"){
 				console.log("num");
-				results += `<p>${JSON.stringify(fish)},</p>`;
+				results += `${JSON.stringify(fish)},`;
 			}
 		}
-		$("#data-container").html(results);
+		document.getElementById("data-container").innerHTML = results;
+		// $("#data-container").html(results);
 	})
 	.catch(error => {
 		console.log(`error: ${error}`);

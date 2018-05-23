@@ -14,7 +14,7 @@ How To:
   
   2. Input your budget, to determine how many of the prospective fish you can buy and to determine your profits.
   
-  3. Input the number of tanks you will be using, tanks can only hold 250 fish each and you can only own your level + 1 total non-deluxe        tanks at a time, if you have any deluxe tanks this could essentially be any number. If you are using Super-Gro and this number you        input larger than 1 for tanks it will be overwritten as we assume you are only Super-Gro'ing one tank at a time.
+  3. Input the number of tanks you will be using, tanks can only hold 250 fish each and you can only own (your level + 1) total non-deluxe        tanks at a time, if you have any deluxe tanks this could essentially be any number. If you are using Super-Gro and this number you        input larger than 1 for tanks it will be overwritten as we assume you are only Super-Gro'ing one tank at a time.
   
   4. If you are using Super-Gro check the Super-Gro checkbox, this will overwrite the number of tanks you have to 1 as it assumes you are      only Super-Gro'ing one tank at a time. It will also remove your ability to choose a timeframe(fishes Adult Age Time) and disregard        any previously selected value. As the time will be instant.
   

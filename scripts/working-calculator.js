@@ -91,7 +91,7 @@ function generateFish(data, level, budget, timeframe, superGro, tanks){
 }
 
 function validateInput(level, budget, tanks){
-	let error = `<p>Please enter a valid `;
+	let error = `<p id="validation">Please enter a valid `;
 	let numOfErrors = 0;
 	if(isNaN(level) || level === ""){
 		error += `level`;
